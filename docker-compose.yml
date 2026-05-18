@@ -22,9 +22,9 @@ services:
       - ./backend/.env
     environment:
       # Overrides from .env for Docker (frontend served on port 80)
-      FRONTEND_URL: http://localhost
-      GOOGLE_REDIRECT_URI: http://localhost/auth/callback
-      CORS_ORIGINS: http://localhost,http://localhost:5173
+      FRONTEND_URL: https://atomquest-rho.vercel.app
+      GOOGLE_REDIRECT_URI: atomquest-production-b22a.up.railway.app/auth/callback
+      CORS_ORIGINS: http://localhost,http://localhost:5173,https://atomquest-rho.vercel.app
     depends_on:
       - postgres
       - redis
