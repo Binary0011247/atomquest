@@ -109,7 +109,7 @@ else:
     _default = ["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost"]
     _from_env = [
         origin.strip()
-        for origin in os.getenv("atomquest-rho.vercel.app", "http://localhost:5173").split(",")
+        for origin in os.getenv("FRONTEND_URL", "http://localhost:5173").split(",")
         if origin.strip()
     ]
     cors_origins = list(dict.fromkeys(_default + _from_env))
