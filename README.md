@@ -1,7 +1,7 @@
 # AtomQuest Goal Portal
 
-**🌐 Live Demo**	atomquest-rho.vercel.app
-**📚 API Documentation**	https://atomquest-production-56d3.up.railway.app/api/docs
+**🌐 Live Demo**	https://atomquest-rho.vercel.app <br>
+**📚 API Documentation**	https://atomquest-production-56d3.up.railway.app/api/docs<br>
 **📄 Full Submission Document** https://atomquest-production-56d3.up.railway.app/
 
 ## Overview
