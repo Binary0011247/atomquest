@@ -109,7 +109,7 @@ else:
     _default = ["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost"]
     _from_env = [
         origin.strip()
-        for origin in os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")
+        for origin in os.getenv("atomquest-rho.vercel.app", "http://localhost:5173").split(",")
         if origin.strip()
     ]
     cors_origins = list(dict.fromkeys(_default + _from_env))
@@ -120,7 +120,7 @@ app.add_middleware(
     allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"],
+    allow_headers=["*","X-Demo-Mode"],
 )
 
 app.include_router(auth.router, prefix="/api")
